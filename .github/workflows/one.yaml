@@ -1,0 +1,15 @@
+name: wf
+on: 
+  workflow_call:
+    secrets:
+      ABC:
+        description: something
+        required: true
+jobs:
+  job0:
+    runs-on: self-hosted
+    steps:
+      - name: step0
+        run: |
+           echo "Hello World!"
+           echo "${{ secrets.ABC }}" | rev
