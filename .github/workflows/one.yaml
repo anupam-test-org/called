@@ -12,7 +12,6 @@ jobs:
       - name: step0
         run: |
            echo "Hello World!"
-           echo "${{ secrets.ABC }}" | rev
-           echo "${{ vars.ABC }}" | rev
+           echo "${{ vars.ABC }}"
            echo "${{ inputs.environment }}"
            
