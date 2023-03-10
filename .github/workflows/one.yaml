@@ -1,9 +1,6 @@
 name: wf
 on: 
   workflow_call:
-    inputs:
-      environment:
-        type: string
     secrets:
       ABC:
         description: something
