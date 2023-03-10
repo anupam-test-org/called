@@ -4,7 +4,6 @@ on:
     secrets:
       ABC:
         description: something
-        required: true
 jobs:
   job0:
     runs-on: self-hosted
