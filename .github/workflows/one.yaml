@@ -11,7 +11,10 @@ jobs:
     steps:
       - name: step0
         run: |
-           echo "Hello World!"
            echo "${{ vars.ABC }}"
-           echo "${{ inputs.environment }}"
-           
+  job1:
+    runs-on: self-hosted
+    steps:
+      - name: step0
+        run: |
+           echo "${{ vars.ABC }}"           
