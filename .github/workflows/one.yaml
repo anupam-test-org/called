@@ -1,9 +1,5 @@
 name: wf
-on: 
-  workflow_call:
-    secrets:
-      ABC:
-        description: something
+on: [workflow_call]
 jobs:
   job0:
     environment: ${{ inputs.environment }}
