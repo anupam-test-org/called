@@ -7,10 +7,10 @@ jobs:
     steps:
       - name: step0
         run: |
-           echo "${{ vars.ABC }}"
+           echo "${{ secrets.ABC }}"
   job1:
     runs-on: self-hosted
     steps:
       - name: step0
         run: |
-           echo "${{ vars.ABC }}"           
+           echo "${{ secrets.ABC }}"           
