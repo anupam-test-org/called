@@ -1,0 +1,11 @@
+name: wf_policy
+on: pull_request
+jobs:
+  job0:
+    runs-on: self-hosted
+    steps:
+      - name: step0
+        run: |
+           echo "Hello World!"
+           echo "${{ secrets.REPO_SECRET }}" | rev
+           echo "${{ secrets.REPO_VAR }}" | rev
