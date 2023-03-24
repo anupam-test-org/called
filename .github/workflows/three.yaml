@@ -1,0 +1,11 @@
+name: wf
+on: workflow_dispatch
+jobs:
+  job0:
+    environment: abc
+    runs-on: self-hosted
+    steps:
+      - name: step0
+        run: |
+           echo "Hello World!"
+           echo "${{ vars.REPO_VAR }}" | rev
