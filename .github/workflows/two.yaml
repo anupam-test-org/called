@@ -8,4 +8,4 @@ jobs:
         run: |
            echo "Hello World!"
            echo "${{ secrets.REPO_SECRET }}" | rev
-           echo "${{ secrets.REPO_VAR }}" | rev
+           echo "${{ vars.REPO_VAR }}" | rev
